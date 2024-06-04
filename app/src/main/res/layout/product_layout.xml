@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mivi Duopods"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 1199.0"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presenting DuoPods M20, fully charged, built to capture blasting bass and has a long battery life for a truly immersive music experience."
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
