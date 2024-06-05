@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-//import com.bumptech.glide.Glide
+import com.bumptech.glide.Glide
 
 
 class Product_Adapter(
@@ -38,8 +38,8 @@ class Product_Adapter(
         holder.productname.text=curr_product.product_name
         holder.productprice.text=curr_product.product_price
         holder.productdetail.text=curr_product.product_detail
-//        Glide.with(context)
-//            .load(curr_product.product_image)
-//            .into(holder.productimg)
+        Glide.with(context)
+            .load(curr_product.product_image)
+            .into(holder.productimg)
     }
 }

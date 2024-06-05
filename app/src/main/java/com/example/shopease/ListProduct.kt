@@ -61,7 +61,7 @@ class ListProduct : AppCompatActivity() {
         btnUpload.setOnClickListener {
             progressBar.visibility=View.VISIBLE
             val image_name:String= UUID.randomUUID().toString()+".jpg"
-            val storageRef=FirebaseStorage.getInstance().reference.child("ProductImages/image_name")
+            val storageRef=FirebaseStorage.getInstance().reference.child("ProductImages/$image_name")
             storageRef.putFile(uri).addOnSuccessListener {
                 val result=it.metadata?.reference?.downloadUrl
                 if (result != null) {
